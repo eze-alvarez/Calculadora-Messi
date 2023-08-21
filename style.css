@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: rgb(3, 84, 84);
+    /* background-color: rgb(3, 84, 84); */
     display: flex;
     justify-content: center;
     align-items:center ;
