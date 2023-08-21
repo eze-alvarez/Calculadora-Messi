@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url(./img/celu\ alargada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(3, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 100vh;
+}
+.calculadora{
+    background-image: url(./img/messicopa\ smart.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgb(0,0,0) ;
+    display: flex;
+    flex-direction: column;
+    padding:40px 30px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px -3px rgb(43, 43, 43);
+
+    
+}
+
+.screen{
+    
+    height: 90px;   /*3 veces row*/
+    max-height: 90px;
+    max-width: 205px;    /*colums + gap*/
+    background-color: rgb(163, 187, 187);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    margin: 40px 0 50px 0;
+    padding: 10px;
+    border-radius: 5px;
+    word-break: break-all;
+    box-shadow: 0 0 0 10px rgba(46, 47, 46, 0.75);
+    opacity: 0.9;
+}
+.botonesAll{
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: repeat(6, 30px);
+    gap: 15px;
+    grid-template-areas: 
+
+    "on       off      flecha   division"
+    "siete    ocho     nueve    multi"
+    "cuatro   cinco    seis     resta"
+    "uno      dos      tres     sum"
+    "punto    cero     reset    sum"
+    "igual    igual    igual    igual";
+}
+button{
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -3px rgb(55, 52, 55), -5px -5px 55px 2px rgb(30, 30, 30);
+    font-weight: bold;
+    font-size: calc(0.7rem + 0.6vw);
+} 
+button:hover{
+    box-shadow: 0px 0px 10px 5px rgb(234, 207, 4);
+}
+/* ------ALL botons ---- */
+.espacio-arriba{
+    /* font-size: 1.2rem; */
+    font-size: calc(0.75rem + 1.5vw);
+    letter-spacing: calc(0.1rem + 0.2vw);
+}
+.espacio-abajo{
+    /* font-size: 1.5rem; */
+    font-size: calc(1rem + 2vw);
+    letter-spacing: calc(0.05rem + 0.2vw);
+}
+.on{
+    grid-area: on;
+}
+.off {
+    grid-area: off;
+}
+.flecha{
+    grid-area: flecha;
+}
+.division{
+    grid-area: division;
+    font-size: calc(0.9rem + 0.6vw);
+}
+.siete{
+    grid-area: siete;
+}
+.ocho{
+    grid-area: ocho;
+}
+.nueve{
+    grid-area: nueve;
+}
+.multi{
+    grid-area: multi;
+}
+.cuatro{
+    grid-area: cuatro;
+}
+.cinco{
+    grid-area: cinco;
+}
+.seis{
+    grid-area: seis;
+}
+.resta{
+    grid-area: resta;
+    font-size: calc(0.9rem + 0.6vw);
+}
+.uno{
+    grid-area: uno;
+}
+.dos{
+    grid-area: dos;
+}
+.tres{
+    grid-area: tres;
+}
+.suma{
+    grid-area: sum;
+    background-color: rgb(55, 176, 176);
+    font-size: calc(0.9rem + 0.6vw);
+}
+.cero{
+    grid-area: cero;
+}
+.punto{
+    grid-area: punto;
+}
+.reset{
+    grid-area: reset;
+}
+.igual{
+    grid-area: igual;
+}
+/* 
+ X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .screen{
+        height: 150px;
+        max-height: 150px;
+        max-width: 285px;
+    }
+    .botonesAll{
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(6, 50px);
+        gap: 15px;
+    }
+} 
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 720px) {
+    .container{
+        background-image: url(./img/espalda.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .calculadora{
+        background-image: url(./img/Lionel-Messi-fondo-para-tu-celular-02.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .screen{
+        height: 150px;
+        max-height: 150px;
+        max-width: 380px;
+        background-color: rgb(25, 64, 123);
+        color: white;
+        font-weight: bold;
+    }
+    .botonesAll{
+        grid-template-columns: repeat(5, 60px);
+        grid-template-rows: repeat(5, 50px);
+        gap: 20px;
+        grid-template-areas: 
+        "siete    ocho     nueve  on       off  "
+        "cuatro   cinco    seis     flecha  resta"
+        "uno      dos      tres     multi   sum"
+        "punto    cero     reset    division sum"
+        "igual    igual    igual    igual   igual";
+    }
+    button{
+        color: white;
+        background-color:rgb(0,0,0) ;
+        box-shadow: 5px 5px 10px -3px rgb(55, 52, 55), -5px -5px 55px 2px rgb(30, 30, 30);
+        font-weight: bold;
+        font-size: calc(0.7rem + 0.6vw);
+        opacity: 0.9;
+    } 
+    button:hover{
+        box-shadow: 0px 0px 10px 5px rgb(234, 207, 4);
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+    .container{
+        background-image: url(./img/Messi18\ hp-pavilion.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .calculadora{
+        background-image: url(./img/messi\ notebook\ hp.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 20px 20px 20px -3px rgb(240, 48, 96);
+    }
+    .screen{
+        height: 150px;
+        max-height: 150px;
+        max-width: 330px;
+        background-color: rgb(236, 94, 109);
+    }
+    .botonesAll{
+        grid-template-columns: repeat(5, 50px);
+        grid-template-rows: repeat(5, 40px);
+        gap: 20px
+    }
+  } 
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container{
+        background-image: url(./img/copa.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: right;
+    }
+    .calculadora{
+        background-image: url(./img/messi\ notebook\ hp.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 20px 20px 20px 5px rgb(57, 11, 22);
+        margin-right: 10%;
+    }
+    .screen{
+        height: 150px;
+        max-height: 150px;
+        max-width: 430px;
+        background-color: rgb(67, 113, 208);
+    }
+    .botonesAll{
+        grid-template-columns: repeat(5, 70px);
+        grid-template-rows: repeat(5, 60px);
+        gap: 20px
+    }
+} 
