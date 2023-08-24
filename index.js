@@ -147,7 +147,7 @@ function start(){
     setTimeout(()=>activarBotones(),3000)
 }
 function saludar(){
-    let mensaje = "bienvenido"
+    let mensaje = "BIENVENIDO"
     let arrayMensaje = mensaje.split('')
     
     let welcome = setInterval(()=>{
