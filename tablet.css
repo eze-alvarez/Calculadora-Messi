@@ -1,7 +1,7 @@
 /* // Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 720px) and (orientation: portrait) {
     html{
-        font-size: 100%;
+        font-size: 110%;
     }
     .conteiner{
         background-image: url(./img/camiseta-tablet.jpg);
@@ -10,7 +10,7 @@
         background-image: url(./img/besoCopa-tablet.jpg);
     }
 }
-@media only screen and (min-device-width: 1080px) and (orientation: landscape){
+@media only screen and (min-width: 1080px) and (orientation: landscape){
     html{
         font-size: 100%;
     }

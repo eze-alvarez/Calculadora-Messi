@@ -188,7 +188,7 @@ No media query for `xs` since this is the default in Bootstrap */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        box-shadow: 2rem 2rem 2rem -0,3rem rgb(240, 48, 96);
+        box-shadow: 2rem 2rem 2rem -0.3rem rgb(240, 48, 96);
         padding: 2rem 1rem;
     }
     .screen{
@@ -218,21 +218,24 @@ No media query for `xs` since this is the default in Bootstrap */
 /* // Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) and (orientation: portrait) {
     html{
-        font-size: 80%;
+        font-size: 90%;
     }
 }
 
-@media only screen and (min-device-width: 850px) and (orientation: landscape){
+@media only screen and (min-width: 750px) and (orientation: landscape){
     html{
-        font-size: 80%;
+        font-size: 50%;
+    }
+    .calculadora{
+        box-shadow: 1.5rem 1.5rem 2.5rem -0.3rem rgb(199, 200, 28);
     }
 } 
 
 
-/* // Medium devices (tablets, 768px and up) 
-@media only screen and (min-width: 720px) and (orientation: portrait) {
+/* // Medium devices (tablets, 768px and up) */
+/* @media only screen and (min-width: 720px) and (orientation: portrait) {
     html{
-        font-size: 100%;
+        font-size: 110%;
     }
     .conteiner{
         background-image: url(./img/camiseta-tablet.jpg);
@@ -241,7 +244,7 @@ No media query for `xs` since this is the default in Bootstrap */
         background-image: url(./img/besoCopa-tablet.jpg);
     }
 }
-@media only screen and (min-device-width: 1080px) and (orientation: landscape){
+@media only screen and (min-width: 1080px) and (orientation: landscape){
     html{
         font-size: 100%;
     }
@@ -251,17 +254,19 @@ No media query for `xs` since this is the default in Bootstrap */
     .calculadora{
         background-image: url(./img/festejo-tablet.jpg);
     }
-}
- // X-Large devices (large desktops, 1200px and up) 
-@media only screen and (min-device-width: 1200px) and (orientation: landscape){
+} */
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) and (orientation: landscape){
     .calculadora{
         box-shadow: 1.5rem 1.5rem 1.5rem -0.3rem rgb(240, 48, 96);
     }
-}
+} */
 
 
- // XX-Large devices (larger desktops, 1400px and up) 
-@media only screen and (min-device-width: 1400px) and (orientation: landscape){
+/* // XX-Large devices (larger desktops, 1400px and up) */
+/* @media only screen and (min-width: 1400px) and (orientation: landscape){
     html{
         font-size: 120%;
     }
@@ -278,9 +283,8 @@ No media query for `xs` since this is the default in Bootstrap */
     }
 }
 
-@media only screen and (min-device-width: 1900px) and (orientation: landscape){
+@media only screen and (min-width: 1900px) and (orientation: landscape){
     html{
         font-size: 140%;
     }
-}
-*/
+} */
